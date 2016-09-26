@@ -5,13 +5,14 @@ package com.example.android.list_yadaien;
  */
 
 public class Data {
-    private String name  , place , imgaddress;
+    private String name  , place;
+    private int imageAddress ;
     Data(){}
-    Data(String name,String place,String imgaddress){
+    Data(String name,String place,int imgaddress){
 
         this.name = name ;
         this.place = place ;
-        this.imgaddress = imgaddress ;
+        this.imageAddress = imgaddress ;
 
     }
 
@@ -22,7 +23,7 @@ public class Data {
                 return place;
 
             }
-    String getImageAddress(){
-        return imgaddress;
+    int getImageAddress(){
+        return imageAddress;
     }
 }
