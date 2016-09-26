@@ -32,8 +32,10 @@ public class MainActivity extends AppCompatActivity {
         img = (ImageView) findViewById(R.id.image);
 
        data = new ArrayList<>();
-       Data obj =  new Data("waqas","uni","waqasa");
+       Data obj =  new Data("waqas","uni",R.drawable.waqasa);
         data.add(obj);
+        
+        //change these all and go to Dataa class
        Data obj2 = new Data("rao","university","raow");
        data.add(obj2);
        Data obj3 = new Data("group","university_group","group");
