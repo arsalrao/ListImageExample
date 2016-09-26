@@ -78,10 +78,11 @@ public class CustomAdapter extends ArrayAdapter<Data> {
 
 
 
-           String ab = objects.get(position).getImageAddress();
-                    Log.i("ImageAddress",ab);
+           int imgRef = objects.get(position).getImageAddress();
+                    //Log.i("ImageAddress",ab);
 
-           img.setImageResource(  img.getResources().getIdentifier(objects.get(position).getImageAddress(), "drawable", context.getPackageName()));
+           use here img.setDrawableResource(imgRef) etc  or img.setImageResource(getResources().getDrawable(imgRef)) there will be some method just like these.
+           //img.setImageResource(  img.getResources().getIdentifier(objects.get(position).getImageAddress(), "drawable", context.getPackageName()));
         }
 
 
